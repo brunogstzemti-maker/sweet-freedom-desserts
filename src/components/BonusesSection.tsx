@@ -38,7 +38,7 @@ const BonusesSection = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {bonuses.map((bonus) => (
-            <div key={bonus.title} className="rounded-2xl overflow-hidden text-center" style={{ backgroundColor: 'hsl(340, 60%, 70%)' }}>
+            <div key={bonus.title} className="rounded-lg overflow-hidden text-center" style={{ backgroundColor: 'hsl(340, 60%, 70%)' }}>
               <div className="px-6 pt-6">
                 <div className="rounded-xl overflow-hidden aspect-[4/3]">
                   <img src={bonus.image} alt={bonus.title} className="w-full h-full object-cover" />
