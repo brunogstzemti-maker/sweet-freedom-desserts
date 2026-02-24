@@ -25,11 +25,11 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-white font-body text-lg md:text-xl mb-2 max-w-2xl mx-auto">
-          + de <strong className="text-primary">300 Sobremesas</strong> Zero Açúcar, Glúten e Lactose
+          + de <strong className="text-yellow-400">300 Sobremesas</strong> Zero Açúcar, Glúten e Lactose
         </p>
 
         <p className="text-white font-body text-base mb-4">
-          Por <strong className="text-primary">Laura Menezes</strong> — Nutricionista
+          Por <strong className="text-yellow-400">Laura Menezes</strong> — Nutricionista
         </p>
 
         <div className="flex items-center justify-center gap-2 mb-8">
