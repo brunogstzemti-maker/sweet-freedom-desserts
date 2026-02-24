@@ -3,6 +3,7 @@ import manjarImg from "@/assets/manjar.webp";
 import doceDeLeiteImg from "@/assets/doce-de-leite.webp";
 import paveImg from "@/assets/pave.webp";
 import pudimImg from "@/assets/pudim.webp";
+import tortaMorangoCardImg from "@/assets/torta-morango.webp";
 
 import quindimImg from "@/assets/carousel/quindim.webp";
 import tortaChocolateImg from "@/assets/carousel/torta-chocolate.webp";
@@ -21,6 +22,7 @@ const recipes = [
   { name: "Doce de Leite", image: doceDeLeiteImg },
   { name: "Pavê", image: paveImg },
   { name: "Pudim", image: pudimImg },
+  { name: "Torta de Morango", image: tortaMorangoCardImg },
 ];
 
 const carouselImages = [
