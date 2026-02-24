@@ -15,7 +15,7 @@ const CountdownBar = () => {
   const seconds = timeLeft % 60;
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-red-600 text-white py-3 px-4">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-red-600 text-white py-1 px-4">
       <div className="container mx-auto flex items-center justify-center gap-6 flex-wrap text-center">
         <div className="font-body text-base md:text-lg font-bold leading-tight">
           <span className="block md:inline">NÃO FECHE OU SAIA</span>
