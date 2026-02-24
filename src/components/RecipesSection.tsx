@@ -86,25 +86,21 @@ const RecipesSection = () => {
           </p>
         </div>
 
-        {/* Infinite auto-scroll carousel */}
-        <div className="overflow-hidden relative">
-          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10" />
-          <div className="flex gap-4 animate-carousel-scroll">
-            {[...carouselImages, ...carouselImages].map((img, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 w-40 h-40 md:w-52 md:h-52 rounded-2xl overflow-hidden shadow-lg"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
+        {/* Grid de fotos */}
+        <div className="grid grid-cols-2 gap-3 max-w-xl mx-auto">
+          {carouselImages.slice(0, 4).map((img, i) => (
+            <div
+              key={i}
+              className="rounded-2xl overflow-hidden shadow-lg aspect-square"
+            >
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
