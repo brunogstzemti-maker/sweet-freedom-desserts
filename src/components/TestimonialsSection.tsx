@@ -30,7 +30,11 @@ const TestimonialsSection = () => {
                   src={img}
                   alt={`Depoimento ${(i % testimonials.length) + 1}`}
                   className="w-full h-auto object-cover"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="low"
+                  width={256}
+                  height={456}
                 />
               </div>
             ))}
