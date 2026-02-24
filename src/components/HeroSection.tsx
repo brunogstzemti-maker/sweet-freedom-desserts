@@ -29,7 +29,7 @@ const HeroSection = () => {
         </p>
 
         <p className="text-primary-foreground/70 font-body text-base mb-4">
-          Por <strong className="text-primary-foreground">Amanda Ballis</strong> — Nutricionista
+          Por <strong className="text-primary-foreground">Laura Menezes</strong> — Nutricionista
         </p>
 
         <div className="flex items-center justify-center gap-2 mb-8">
