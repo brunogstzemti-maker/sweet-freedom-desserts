@@ -19,9 +19,14 @@ const HeroSection = () => {
           Mais de 2.137 pessoas já aproveitaram
         </p>
 
-        <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-4xl mx-auto">
-          Agora você pode comer sua sobremesa favorita{" "}
-          <span className="text-warm-gold">de domingo a domingo</span>, sem culpa!
+        <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-extrabold uppercase leading-tight mb-6 max-w-4xl mx-auto tracking-wider">
+          <span className="inline bg-chocolate px-3 py-1 text-white">AGORA VOCÊ PODE COMER</span>
+          <br />
+          <span className="inline px-3 py-1 text-white" style={{ backgroundColor: 'hsl(340, 60%, 65%)' }}>SUA SOBREMESA FAVORITA</span>
+          <br />
+          <span className="text-white">DE DOMINGO A DOMINGO,</span>
+          <br />
+          <span className="text-white">SEM CULPA!</span>
         </h1>
 
         <p className="text-white font-body text-lg md:text-xl mb-2 max-w-2xl mx-auto">
