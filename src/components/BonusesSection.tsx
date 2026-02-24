@@ -1,20 +1,26 @@
 import { Gift } from "lucide-react";
+import bonusTortasImg from "@/assets/bonus-tortas.webp";
+import bonusLancheImg from "@/assets/bonus-lanche.webp";
+import bonusGeleiaImg from "@/assets/bonus-geleia.webp";
 
 const bonuses = [
   {
     title: "Tortas Doces",
     description: "Zero açúcar, zero glúten e zero lactose",
     originalPrice: "R$ 39,90",
+    image: bonusTortasImg,
   },
   {
     title: "Lanche da Tarde",
     description: "Zero açúcar, zero glúten e zero lactose",
     originalPrice: "R$ 29,90",
+    image: bonusLancheImg,
   },
   {
     title: "Geléias Caseiras",
     description: "Zero açúcar",
     originalPrice: "R$ 19,90",
+    image: bonusGeleiaImg,
   },
 ];
 
@@ -32,14 +38,16 @@ const BonusesSection = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {bonuses.map((bonus) => (
-            <div key={bonus.title} className="card-bonus text-center group hover:border-accent transition-colors aspect-square flex flex-col items-center justify-center">
-              <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                <Gift className="w-7 h-7 text-accent" />
+            <div key={bonus.title} className="card-bonus text-center group hover:border-accent transition-colors aspect-square flex flex-col items-center justify-center overflow-hidden">
+              <div className="w-full aspect-[4/3] overflow-hidden rounded-t-lg mb-3">
+                <img src={bonus.image} alt={bonus.title} className="w-full h-full object-cover" />
               </div>
-              <h3 className="font-display text-xl font-bold text-foreground mb-2">{bonus.title}</h3>
-              <p className="text-muted-foreground font-body text-sm mb-4">{bonus.description}</p>
-              <p className="price-old text-sm font-body">DE {bonus.originalPrice}</p>
-              <span className="badge-free text-base mt-2">GRÁTIS</span>
+              <div className="px-3 pb-3 flex flex-col items-center">
+                <h3 className="font-display text-lg font-bold text-foreground mb-1">{bonus.title}</h3>
+                <p className="text-muted-foreground font-body text-xs mb-2">{bonus.description}</p>
+                <p className="price-old text-sm font-body">DE {bonus.originalPrice}</p>
+                <span className="badge-free text-base mt-1">GRÁTIS</span>
+              </div>
             </div>
           ))}
         </div>
