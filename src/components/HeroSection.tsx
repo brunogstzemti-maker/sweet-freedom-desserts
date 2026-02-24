@@ -52,7 +52,7 @@ const HeroSection = () => {
         </div>
 
         <a href="#oferta" className="btn-cta text-xl animate-pulse-glow">
-          🍫 QUERO APROVEITAR O DESCONTO
+          QUERO APROVEITAR O DESCONTO
         </a>
       </div>
     </section>
