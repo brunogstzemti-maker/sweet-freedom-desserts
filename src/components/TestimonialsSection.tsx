@@ -11,7 +11,7 @@ const TestimonialsSection = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 max-w-4xl">
         <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-3">
-          Veja o que nossas alunas estão dizendo
+          Elas já estão <span className="text-primary">praticando as receitas</span>
         </h2>
         <p className="text-center text-muted-foreground font-body mb-12">
           Resultados reais de pessoas reais
