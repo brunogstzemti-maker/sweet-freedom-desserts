@@ -25,11 +25,11 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-primary-foreground/80 font-body text-lg md:text-xl mb-2 max-w-2xl mx-auto">
-          + de <strong className="text-primary-foreground">300 Sobremesas</strong> Zero Açúcar, Glúten e Lactose
+          + de <strong className="text-white">300 Sobremesas</strong> Zero Açúcar, Glúten e Lactose
         </p>
 
         <p className="text-primary-foreground/70 font-body text-base mb-4">
-          Por <strong className="text-primary-foreground">Laura Menezes</strong> — Nutricionista
+          Por <strong className="text-white">Laura Menezes</strong> — Nutricionista
         </p>
 
         <div className="flex items-center justify-center gap-2 mb-8">
@@ -39,7 +39,7 @@ const HeroSection = () => {
             ))}
           </div>
           <span className="text-primary-foreground/80 text-sm font-body">
-            (2.137) • <strong className="text-warm-gold">97%</strong> de aprovação
+            (2.137) • <strong className="text-white">97%</strong> de aprovação
           </span>
         </div>
 
