@@ -32,7 +32,7 @@ const BonusesSection = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {bonuses.map((bonus) => (
-            <div key={bonus.title} className="card-bonus text-center group hover:border-accent transition-colors">
+            <div key={bonus.title} className="card-bonus text-center group hover:border-accent transition-colors aspect-square flex flex-col items-center justify-center">
               <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
                 <Gift className="w-7 h-7 text-accent" />
               </div>
