@@ -38,7 +38,7 @@ const BonusesSection = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {bonuses.map((bonus) => (
-            <div key={bonus.title} className="card-bonus text-center group hover:border-accent transition-colors aspect-square flex flex-col items-center justify-center overflow-hidden">
+            <div key={bonus.title} className="card-bonus bg-primary/20 text-center group hover:border-accent transition-colors aspect-square flex flex-col items-center justify-center overflow-hidden">
               <div className="w-full aspect-[4/3] overflow-hidden rounded-t-lg mb-3">
                 <img src={bonus.image} alt={bonus.title} className="w-full h-full object-cover" />
               </div>
