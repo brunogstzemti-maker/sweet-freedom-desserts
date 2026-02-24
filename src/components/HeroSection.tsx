@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import heroImg from "@/assets/hero-desserts.jpg";
+import mockupImg from "@/assets/mockup-szero.webp";
 
 const HeroSection = () => {
   return (
@@ -45,6 +46,14 @@ const HeroSection = () => {
         <a href="#oferta" className="btn-cta text-xl animate-pulse-glow">
           🍫 QUERO APROVEITAR O DESCONTO
         </a>
+
+        <div className="mt-10 max-w-3xl mx-auto">
+          <img
+            src={mockupImg}
+            alt="Mockup do ebook 300 Receitas de Sobremesas Zero com bônus"
+            className="w-full h-auto drop-shadow-2xl"
+          />
+        </div>
       </div>
     </section>
   );
