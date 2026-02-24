@@ -32,6 +32,14 @@ const HeroSection = () => {
           Por <strong className="text-yellow-400">Laura Menezes</strong> — Nutricionista
         </p>
 
+        <div className="mt-6 mb-8 max-w-3xl mx-auto">
+          <img
+            src={mockupImg}
+            alt="Mockup do ebook 300 Receitas de Sobremesas Zero com bônus"
+            className="w-full h-auto drop-shadow-2xl"
+          />
+        </div>
+
         <div className="flex items-center justify-center gap-2 mb-8">
           <div className="flex text-yellow-400">
             {[...Array(5)].map((_, i) => (
@@ -46,14 +54,6 @@ const HeroSection = () => {
         <a href="#oferta" className="btn-cta text-xl animate-pulse-glow">
           🍫 QUERO APROVEITAR O DESCONTO
         </a>
-
-        <div className="mt-10 max-w-3xl mx-auto">
-          <img
-            src={mockupImg}
-            alt="Mockup do ebook 300 Receitas de Sobremesas Zero com bônus"
-            className="w-full h-auto drop-shadow-2xl"
-          />
-        </div>
       </div>
     </section>
   );
