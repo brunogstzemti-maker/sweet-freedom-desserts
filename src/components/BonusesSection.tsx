@@ -38,15 +38,17 @@ const BonusesSection = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {bonuses.map((bonus) => (
-            <div key={bonus.title} className="card-bonus bg-primary/20 text-center group hover:border-accent transition-colors aspect-square flex flex-col items-center justify-center overflow-hidden">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-t-lg mb-3">
-                <img src={bonus.image} alt={bonus.title} className="w-full h-full object-cover" />
+            <div key={bonus.title} className="rounded-2xl overflow-hidden text-center" style={{ backgroundColor: 'hsl(340, 60%, 70%)' }}>
+              <div className="px-6 pt-6">
+                <div className="rounded-xl overflow-hidden aspect-[4/3]">
+                  <img src={bonus.image} alt={bonus.title} className="w-full h-full object-cover" />
+                </div>
               </div>
-              <div className="px-3 pb-3 flex flex-col items-center">
-                <h3 className="font-display text-lg font-bold text-foreground mb-1">{bonus.title}</h3>
-                <p className="text-muted-foreground font-body text-xs mb-2">{bonus.description}</p>
-                <p className="price-old text-sm font-body">DE {bonus.originalPrice}</p>
-                <span className="badge-free text-base mt-1">GRÁTIS</span>
+              <div className="px-4 py-5 flex flex-col items-center">
+                <h3 className="font-display text-xl font-bold text-white mb-1">{bonus.title}</h3>
+                <p className="text-white/80 font-body text-sm mb-3">{bonus.description}</p>
+                <p className="line-through text-white/60 text-lg font-body mb-1">DE {bonus.originalPrice}</p>
+                <span className="text-red-500 font-display text-3xl font-bold">GRÁTIS</span>
               </div>
             </div>
           ))}
