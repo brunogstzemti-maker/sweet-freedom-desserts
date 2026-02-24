@@ -17,17 +17,24 @@ const TestimonialsSection = () => {
           Resultados reais de pessoas reais
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {testimonials.map((img, i) => (
-            <div key={i} className="rounded-lg overflow-hidden shadow-lg">
-              <img
-                src={img}
-                alt={`Depoimento ${i + 1}`}
-                className="w-full h-auto object-cover"
-                loading="lazy"
-              />
-            </div>
-          ))}
+        <div className="overflow-hidden relative">
+          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10" />
+          <div className="flex gap-4 animate-carousel-scroll">
+            {[...testimonials, ...testimonials].map((img, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 w-52 md:w-64 rounded-2xl overflow-hidden shadow-lg"
+              >
+                <img
+                  src={img}
+                  alt={`Depoimento ${(i % testimonials.length) + 1}`}
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
