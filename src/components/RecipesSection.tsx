@@ -55,7 +55,7 @@ const RecipesSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
           {recipes.map((recipe) => (
             <div key={recipe.name} className="card-recipe group cursor-pointer">
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-square overflow-hidden">
                 <img
                   src={recipe.image}
                   alt={recipe.name}
@@ -63,11 +63,11 @@ const RecipesSection = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-4">
-                <h3 className="font-display font-bold text-foreground text-lg mb-2">{recipe.name}</h3>
+              <div className="p-3">
+                <h3 className="font-display font-bold text-foreground text-sm mb-1">{recipe.name}</h3>
                 <div className="flex flex-wrap gap-1">
                   {tags.map((tag) => (
-                    <span key={tag} className="badge-tag text-[10px]">{tag}</span>
+                    <span key={tag} className="badge-tag text-[8px] px-2 py-0.5">{tag}</span>
                   ))}
                 </div>
               </div>
