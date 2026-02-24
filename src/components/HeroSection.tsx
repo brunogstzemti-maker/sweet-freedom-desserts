@@ -24,12 +24,12 @@ const HeroSection = () => {
           <span className="text-warm-gold">de domingo a domingo</span>, sem culpa!
         </h1>
 
-        <p className="text-primary-foreground/80 font-body text-lg md:text-xl mb-2 max-w-2xl mx-auto">
-          + de <strong className="text-white">300 Sobremesas</strong> Zero Açúcar, Glúten e Lactose
+        <p className="text-white font-body text-lg md:text-xl mb-2 max-w-2xl mx-auto">
+          + de <strong className="text-primary">300 Sobremesas</strong> Zero Açúcar, Glúten e Lactose
         </p>
 
-        <p className="text-primary-foreground/70 font-body text-base mb-4">
-          Por <strong className="text-white">Laura Menezes</strong> — Nutricionista
+        <p className="text-white font-body text-base mb-4">
+          Por <strong className="text-primary">Laura Menezes</strong> — Nutricionista
         </p>
 
         <div className="flex items-center justify-center gap-2 mb-8">
@@ -38,8 +38,8 @@ const HeroSection = () => {
               <Star key={i} className="w-5 h-5 fill-current" />
             ))}
           </div>
-          <span className="text-primary-foreground/80 text-sm font-body">
-            (2.137) • <strong className="text-white">97%</strong> de aprovação
+          <span className="text-white text-sm font-body">
+            (2.137) • <strong className="text-primary">97%</strong> de aprovação
           </span>
         </div>
 
