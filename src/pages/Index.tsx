@@ -1,5 +1,6 @@
 import CountdownBar from "@/components/CountdownBar";
 import HeroSection from "@/components/HeroSection";
+import HeroTestimonials from "@/components/HeroTestimonials";
 import RecipesSection from "@/components/RecipesSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import BonusesSection from "@/components/BonusesSection";
@@ -13,6 +14,7 @@ const Index = () => {
     <div className="min-h-screen bg-background pt-12">
       <CountdownBar />
       <HeroSection />
+      <HeroTestimonials />
       <RecipesSection />
       <BenefitsSection />
       <TestimonialsSection />
