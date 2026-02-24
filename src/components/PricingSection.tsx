@@ -25,7 +25,7 @@ const PricingSection = () => {
             <p className="price-old text-lg font-body">DE R$ 97,00</p>
             <div className="flex items-baseline justify-center gap-2 mt-1">
               <span className="text-muted-foreground font-body text-lg">POR</span>
-              <span className="price-new text-6xl md:text-7xl font-bold">R$ 10</span>
+              <span className="price-new text-6xl md:text-7xl font-bold">R$ 9,90</span>
             </div>
             <p className="text-accent font-body font-semibold text-sm mt-2 uppercase tracking-wider">
               ⚡ Somente hoje
