@@ -13,10 +13,10 @@ const PricingSection = () => {
   return (
     <section id="oferta" className="py-16 md:py-24 gradient-hero">
       <div className="container mx-auto px-4 max-w-xl">
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-2">
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-white text-center mb-2">
           Tudo o que você receberá
         </h2>
-        <p className="text-center text-primary-foreground/70 font-body mb-10">
+        <p className="text-center text-white/70 font-body mb-10">
           Aproveitando a oferta de hoje
         </p>
 
