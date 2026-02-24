@@ -1,8 +1,8 @@
-import brownieImg from "@/assets/brownie.jpg";
-import manjarImg from "@/assets/manjar.jpg";
-import doceDeLeiteImg from "@/assets/doce-de-leite.jpg";
-import paveImg from "@/assets/pave.jpg";
-import pudimImg from "@/assets/pudim.jpg";
+import brownieImg from "@/assets/brownie.webp";
+import manjarImg from "@/assets/manjar.webp";
+import doceDeLeiteImg from "@/assets/doce-de-leite.webp";
+import paveImg from "@/assets/pave.webp";
+import pudimImg from "@/assets/pudim.webp";
 
 const recipes = [
   { name: "Brownie", image: brownieImg },
