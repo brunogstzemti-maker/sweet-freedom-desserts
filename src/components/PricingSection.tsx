@@ -20,7 +20,7 @@ const PricingSection = () => {
           Aproveitando a oferta de hoje
         </p>
 
-        <div className="bg-background rounded-3xl p-8 md:p-10 shadow-2xl">
+        <div className="bg-background rounded-3xl p-8 md:p-10 shadow-2xl border-2 border-accent">
           <div className="text-center mb-8">
             <p className="price-old text-lg font-body">DE R$ 97,00</p>
             <div className="flex items-baseline justify-center gap-2 mt-1">
