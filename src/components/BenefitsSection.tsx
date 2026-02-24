@@ -40,7 +40,7 @@ const BenefitsSection = () => {
 
         <div className="text-center mt-10">
           <a href="#oferta" className="btn-cta text-lg">
-            🍫 QUERO APROVEITAR O DESCONTO
+            QUERO APROVEITAR O DESCONTO
           </a>
         </div>
       </div>

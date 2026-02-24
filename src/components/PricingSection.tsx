@@ -45,7 +45,7 @@ const PricingSection = () => {
             href="#"
             className="btn-cta w-full text-center text-sm py-3 animate-pulse-glow block"
           >
-            🍫 QUERO APROVEITAR O DESCONTO
+            QUERO APROVEITAR O DESCONTO
           </a>
 
           <div className="flex items-center justify-center gap-2 mt-6 text-muted-foreground">

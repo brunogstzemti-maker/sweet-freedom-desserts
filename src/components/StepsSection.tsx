@@ -25,7 +25,7 @@ const StepsSection = () => {
 
         <div className="mt-10">
           <a href="#oferta" className="btn-cta text-lg">
-            🍫 QUERO APROVEITAR O DESCONTO
+            QUERO APROVEITAR O DESCONTO
           </a>
         </div>
       </div>
