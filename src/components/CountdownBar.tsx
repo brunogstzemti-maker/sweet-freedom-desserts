@@ -19,7 +19,7 @@ const CountdownBar = () => {
       <div className="container mx-auto flex items-center justify-center gap-4 flex-wrap text-center">
         <div className="font-body text-xs md:text-sm font-bold leading-tight">
           <span className="block md:inline">NÃO FECHE OU SAIA</span>
-          <span className="block md:inline md:ml-1">Desconto especial só HOJE nesta página: 24/2/2026</span>
+          <span className="block md:inline md:ml-1">Desconto especial só <span className="text-yellow-400">HOJE</span> nesta página: <span className="text-yellow-400">24/2/2026</span></span>
         </div>
         <div className="font-display text-xl md:text-2xl font-bold tabular-nums">
           {String(minutes).padStart(2, "0")}:{String(seconds).padStart(2, "0")}
