@@ -19,7 +19,7 @@ const HeroSection = () => {
           Mais de 2.137 pessoas já aproveitaram
         </p>
 
-        <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 max-w-4xl mx-auto">
+        <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-4xl mx-auto">
           Agora você pode comer sua sobremesa favorita{" "}
           <span className="text-warm-gold">de domingo a domingo</span>, sem culpa!
         </h1>
