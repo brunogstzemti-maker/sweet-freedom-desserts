@@ -33,7 +33,7 @@ const HeroSection = () => {
         </p>
 
         <div className="flex items-center justify-center gap-2 mb-8">
-          <div className="flex star-rating">
+          <div className="flex text-yellow-400">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="w-5 h-5 fill-current" />
             ))}
