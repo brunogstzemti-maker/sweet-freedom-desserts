@@ -107,19 +107,31 @@
 
 @layer components {
   .btn-cta {
-    @apply inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-bold transition-all duration-300;
+    @apply inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-bold transition-all duration-300 relative overflow-hidden;
     background-color: hsl(var(--accent));
     color: hsl(var(--accent-foreground));
     box-shadow: 0 4px 20px hsl(var(--accent) / 0.4);
   }
 
+  .btn-cta::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 40%;
+    height: 200%;
+    background: linear-gradient(90deg, transparent, hsla(0, 0%, 100%, 0.25), transparent);
+    transform: skewX(-20deg);
+    animation: btn-shine 3s ease-in-out infinite;
+  }
+
   .btn-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px hsl(var(--accent) / 0.5);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 35px hsl(var(--accent) / 0.55);
   }
 
   .btn-cta:active {
-    transform: translateY(0);
+    transform: translateY(0) scale(0.98);
   }
 
   .badge-tag {
@@ -200,6 +212,11 @@
   animation: float 3s ease-in-out infinite;
 }
 
+@keyframes btn-shine {
+  0% { left: -60%; }
+  50% { left: 120%; }
+  100% { left: 120%; }
+}
 @keyframes carousel-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
