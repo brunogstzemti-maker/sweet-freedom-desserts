@@ -55,7 +55,7 @@ const RecipesSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
           {recipes.map((recipe) => (
             <div key={recipe.name} className="card-recipe group cursor-pointer">
-              <div className="aspect-square overflow-hidden">
+              <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={recipe.image}
                   alt={recipe.name}
