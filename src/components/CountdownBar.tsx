@@ -15,13 +15,13 @@ const CountdownBar = () => {
   const seconds = timeLeft % 60;
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-red-600 text-white py-2 px-4">
-      <div className="container mx-auto flex items-center justify-center gap-4 flex-wrap text-center">
-        <div className="font-body text-xs md:text-sm font-bold leading-tight">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-red-600 text-white py-3 px-4">
+      <div className="container mx-auto flex items-center justify-center gap-6 flex-wrap text-center">
+        <div className="font-body text-base md:text-lg font-bold leading-tight">
           <span className="block md:inline">NÃO FECHE OU SAIA</span>
-          <span className="block md:inline md:ml-1">Desconto especial só <span className="text-yellow-400">HOJE</span> nesta página: <span className="text-yellow-400">24/2/2026</span></span>
+          <span className="block md:inline md:ml-2">Desconto especial só <span className="text-yellow-400">HOJE</span> nesta página: <span className="text-yellow-400">24/2/2026</span></span>
         </div>
-        <div className="font-display text-xl md:text-2xl font-bold tabular-nums">
+        <div className="font-display text-3xl md:text-4xl font-bold tabular-nums">
           {String(minutes).padStart(2, "0")}:{String(seconds).padStart(2, "0")}
         </div>
       </div>
