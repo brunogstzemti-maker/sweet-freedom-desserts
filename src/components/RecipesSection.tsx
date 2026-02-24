@@ -77,33 +77,36 @@ const RecipesSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-16 mb-8">
-          <p className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">
-            Sim! São mais de <span className="text-accent">300 receitas!</span>
-          </p>
-          <p className="text-muted-foreground font-body mb-8">
-            Zero Açúcar, Zero Glúten e Zero Lactose com o sabor das tradicionais!
-          </p>
-        </div>
 
-        {/* Infinite auto-scroll carousel */}
-        <div className="overflow-hidden relative">
-          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10" />
-          <div className="flex gap-4 animate-carousel-scroll">
-            {[...carouselImages, ...carouselImages].map((img, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 w-40 h-40 md:w-52 md:h-52 rounded-2xl overflow-hidden shadow-lg"
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+        <div className="gradient-hero rounded-2xl py-12 px-4 mt-16">
+          <div className="text-center mb-8">
+            <p className="font-display text-2xl md:text-3xl font-bold text-white mb-2">
+              Sim! São mais de <span className="text-yellow-400">300 receitas!</span>
+            </p>
+            <p className="text-white/80 font-body mb-8">
+              Zero Açúcar, Zero Glúten e Zero Lactose com o sabor das tradicionais!
+            </p>
+          </div>
+
+          {/* Infinite auto-scroll carousel */}
+          <div className="overflow-hidden relative">
+            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[hsl(340,35%,30%)] to-transparent z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[hsl(340,35%,30%)] to-transparent z-10" />
+            <div className="flex gap-4 animate-carousel-scroll">
+              {[...carouselImages, ...carouselImages].map((img, i) => (
+                <div
+                  key={i}
+                  className="flex-shrink-0 w-40 h-40 md:w-52 md:h-52 rounded-2xl overflow-hidden shadow-lg"
+                >
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
