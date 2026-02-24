@@ -196,3 +196,16 @@
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+
+@keyframes carousel-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-carousel-scroll {
+  animation: carousel-scroll 30s linear infinite;
+}
+
+.animate-carousel-scroll:hover {
+  animation-play-state: paused;
+}
