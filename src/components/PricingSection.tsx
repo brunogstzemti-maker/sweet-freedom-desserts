@@ -42,7 +42,7 @@ const PricingSection = () => {
           </div>
 
           <a
-            href="#"
+            href="https://checkout.ofertapremiumsite.com.br/VCCL1O8SCTJB"
             className="btn-cta w-full text-center text-sm py-3 animate-pulse-glow block"
           >
             QUERO APROVEITAR O DESCONTO

@@ -22,7 +22,7 @@ const CountdownBar = () => {
         <br />
         Desconto especial só <span className="text-yellow-400">HOJE</span> nesta página:
         <br />
-        <span className="text-yellow-400">24/2/2026</span> | Tempo restante:{" "}
+        <span className="text-yellow-400">25/02/2026</span> | Tempo restante:{" "}
         <span className="text-yellow-400 font-display">
           {hours}h {String(minutes).padStart(2, "0")}m {String(seconds).padStart(2, "0")}s
         </span>
